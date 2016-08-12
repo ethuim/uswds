@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>0.11.0</version>
+    <version>0.11.0-SNAPSHOT</version>
     <name>US Web Design Standards</name>
     <description>WebJar for US Web Design Standards</description>
     <url>https://standards.usa.gov</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.url>https://github.com/18F/web-design-standards/releases/download/v0.11.0/uswds-0.11.0.zip</upstream.url>
+        <upstream.url>https://github.com/18F/web-design-standards/releases/download/v${version.unsnapshot}/uswds-${version.unsnapshot}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
