@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>0.11.1-SNAPSHOT</version>
+    <version>0.13.1-SNAPSHOT</version>
     <name>US Web Design Standards</name>
     <description>WebJar for US Web Design Standards</description>
     <url>https://standards.usa.gov</url>
