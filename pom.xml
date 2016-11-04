@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>0.13.1</version>
+    <version>0.13.2-SNAPSHOT</version>
     <name>US Web Design Standards</name>
     <description>WebJar for US Web Design Standards</description>
     <url>https://standards.usa.gov</url>
@@ -49,7 +49,7 @@
         <url>http://github.com/webjars/uswds</url>
         <connection>scm:git:https://github.com/webjars/uswds.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/uswds.git</developerConnection>
-        <tag>uswds-0.13.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
