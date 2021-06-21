@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>2.0.2-SNAPSHOT</version>
-    <name>US Web Design Standards</name>
-    <description>WebJar for US Web Design Standards</description>
-    <url>https://standards.usa.gov</url>
+    <version>2.12.0-SNAPSHOT</version>
+    <name>uswds</name>
+    <description>WebJar for United States Web Design System</description>
+    <url>https://designsystem.digital.gov/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.url>https://github.com/18F/web-design-standards/releases/download/v${version.unsnapshot}/uswds-${version.unsnapshot}.zip</upstream.url>
+        <upstream.url>https://github.com/uswds/uswds/releases/download/v${version.unsnapshot}/uswds-${version.unsnapshot}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
@@ -33,14 +33,14 @@
         <developer>
             <id>18F</id>
             <name>18F</name>
-            <email>18f@gsa.gov</email>
+            <email>uswds@support.digitalgov.gov</email>
         </developer>
     </developers>
 
     <licenses>
         <license>
             <name>assorted</name>
-            <url>https://github.com/18F/web-design-standards/blob/staging/LICENSE.md</url>
+            <url>https://github.com/uswds/uswds/blob/develop/LICENSE.md</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
