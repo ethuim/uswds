@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>2.12.1-SNAPSHOT</version>
+    <version>3.0.2-SNAPSHOT</version>
     <name>uswds</name>
     <description>WebJar for United States Web Design System</description>
     <url>https://designsystem.digital.gov/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.url>https://github.com/uswds/uswds/releases/download/v${version.unsnapshot}/uswds-${version.unsnapshot}.zip</upstream.url>
+        <upstream.url>https://github.com/uswds/uswds/releases/download/v${version.unsnapshot}/uswds-uswds-${version.unsnapshot}.tgz</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
@@ -79,9 +79,9 @@
                         <configuration>
                             <target>
                                 <echo message="download archive" />
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
-                                <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/uswds-${project.artifactId}-${version.unsnapshot}.tgz" />
+                                <echo message="untar archive" />
+                                <untar src="${project.build.directory}/uswds-${project.artifactId}-${version.unsnapshot}.tgz" dest="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" compression="gzip"/>
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
                                     <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" />
