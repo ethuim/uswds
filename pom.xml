@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>3.0.2-SNAPSHOT</version>
+    <version>3.0.2</version>
     <name>uswds</name>
     <description>WebJar for United States Web Design System</description>
     <url>https://designsystem.digital.gov/</url>
@@ -49,7 +49,7 @@
         <url>http://github.com/webjars/uswds</url>
         <connection>scm:git:https://github.com/webjars/uswds.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/uswds.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>uswds-3.0.2</tag>
     </scm>
 
     <build>
@@ -81,7 +81,7 @@
                                 <echo message="download archive" />
                                 <get src="${upstream.url}" dest="${project.build.directory}/uswds-${project.artifactId}-${version.unsnapshot}.tgz" />
                                 <echo message="untar archive" />
-                                <untar src="${project.build.directory}/uswds-${project.artifactId}-${version.unsnapshot}.tgz" dest="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" compression="gzip"/>
+                                <untar src="${project.build.directory}/uswds-${project.artifactId}-${version.unsnapshot}.tgz" dest="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" compression="gzip" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
                                     <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/package/dist" />
