@@ -84,7 +84,7 @@
                                 <untar src="${project.build.directory}/uswds-${project.artifactId}-${version.unsnapshot}.tgz" dest="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" compression="gzip"/>
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}" />
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/package/dist" />
                                 </move>
                             </target>
                         </configuration>
