@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>3.0.3-SNAPSHOT</version>
+    <version>3.4.1</version>
     <name>uswds</name>
     <description>WebJar for United States Web Design System</description>
     <url>https://designsystem.digital.gov/</url>
