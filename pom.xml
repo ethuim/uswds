@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>3.4.1</version>
+    <version>3.4.2-SNAPSHOT</version>
     <name>uswds</name>
     <description>WebJar for United States Web Design System</description>
     <url>https://designsystem.digital.gov/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.outputTimestamp>1685720116</project.build.outputTimestamp>
+        <project.build.outputTimestamp>1685720123</project.build.outputTimestamp>
         <upstream.url>https://github.com/uswds/uswds/releases/download/v${version.unsnapshot}/uswds-uswds-${version.unsnapshot}.tgz</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/uswds</url>
         <connection>scm:git:https://github.com/webjars/uswds.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/uswds.git</developerConnection>
-        <tag>uswds-3.4.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
