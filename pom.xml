@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uswds</artifactId>
-    <version>3.4.1-SNAPSHOT</version>
+    <version>3.4.2-SNAPSHOT</version>
     <name>uswds</name>
     <description>WebJar for United States Web Design System</description>
     <url>https://designsystem.digital.gov/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.outputTimestamp>10</project.build.outputTimestamp>
+        <project.build.outputTimestamp>1685720123</project.build.outputTimestamp>
         <upstream.url>https://github.com/uswds/uswds/releases/download/v${version.unsnapshot}/uswds-uswds-${version.unsnapshot}.tgz</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
@@ -96,7 +96,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>3.0.0-M6</version>
+                <version>3.0.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -107,7 +107,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
+                <version>1.6.13</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
